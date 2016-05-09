@@ -1,5 +1,5 @@
 var React = require('react');
-var Blabslist = require('./List.jsx');
+var BlabsList = require('./List.jsx');
 
 module.exports = React.createClass({
   getInitialState: function() {
