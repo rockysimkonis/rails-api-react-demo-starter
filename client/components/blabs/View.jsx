@@ -17,6 +17,7 @@ module.exports = React.createClass({
   writeBlabToAPI: function(data) {
     this.props.writeToAPI('post', this.props.origin + '/blabs', data, function(blab) {
       var blabs = this.state.data;
+      blabs.shift();
       blabs.unshift(blab);
       this.setState({data: blabs});
     }.bind(this));
