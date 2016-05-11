@@ -9,3 +9,7 @@ gem 'pg'
 gem 'rake'
 gem 'oauth'
 gem 'jwt'
+
+group :production do
+  gem 'rails_12factor'
+end
